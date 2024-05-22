@@ -1,0 +1,33 @@
+﻿@model IEnumerable<FoodApplication.Models.Cart>
+@{
+    ViewData["Title"] = "Cart";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="border-bottom">
+                <h4 class="text-dark">Recipe Cart</h4>
+                <p class="text-muted fst-italic">@Model.Count() Recipes in cart</p>
+            </div>
+            <div>
+                @foreach (var cart in Model)
+                {
+                    <div class="border-bottom d-flex flex-wrap p-2">
+                        <img src="@cart.Image_url" class="cartImg"/>
+                        <a class ="text-decoration-none text-dark px-2 cartTitle fw-bold" href="/Recipe/Order?id=@cart.RecipeId">@cart.Title</a>
+                        <span onclick="removeCartfromlist('@cart.RecipeId')" 
+                        class="text-danger fw-bold p-2 removeCartBtn">Remove</span>
+                    </div>
+                }
+                @if(Model.Count() == 0)
+                {
+                    <div class="text-center">
+                        <i class="fa-solid fa-cart-shopping text-warning emptyCart"></i>
+                        <p class="fw-bold fs-4">Your cart is empty</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

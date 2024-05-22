@@ -1,0 +1,12 @@
+﻿@model IEnumerable<FoodApplication.Models.Cart>
+
+@foreach(var cart in Model)
+{
+    <div class="border-bottom p-2 d-flex">
+        <img src="@cart.Image_url" class="cartListImg"/>
+        <a class="fw-bold text-dark text-decoration-none p-xl-2" href="/Recipe/Order?id=@cart.RecipeId">@(cart.Title?.Length >= 15 ? cart.Title.Substring(0,14)+"...": cart.Title)</a>
+    </div>
+}
+<div class="text-center bg-black p-1">
+    <a href="/Cart" class="text-white fw-5 text-decoration-none">Go To Cart</a>
+</div>

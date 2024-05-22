@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row shadow rounded">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 py-2">
+            <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner custom-carousel-inner">
+                    <div class="carousel-item h-100 active">
+                        <img src="/images/carouselImages/pexels-photo-958545.jpeg" class="d-block w-100 h-100" alt="Recipes">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="/images/carouselImages/pexels-photo-315755.jpeg" class="d-block w-100 h-100" alt="Recipes">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="/images/carouselImages/pexels-photo-2679501.jpeg" class="d-block w-100 h-100" alt="Recipes">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="mb-3">
+                <h2>Get The Best <span class="text-success fst-italic">Food</span> From
+                    <span class="text-success"> The Best Restaurants.</span>
+                </h2>
+            </div>
+            <div class="mb-1 p-3">
+                <span><i class="fa-solid fa-seedling text-success mx-2 fs-4"></i></span>
+                <span class="fs-5 text-dark fst-italic">Freash Food</span>
+            </div>
+            
+            <div class="mb-1 p-3">
+                <span><i class="fa-solid fa-wheat-awn text-success mx-2 fs-4"></i></span>
+                <span class="fs-5 text-dark fst-italic">Healthy Meal</span>
+            </div>
+            <div class="mb-1 p-3">
+                <span><i class="fa-solid fa-person-biking text-success mx-2 fs-4"></i></span>
+                <span class="fs-5 text-dark">Fastest Delivery</span>
+                <p class="py-2">We Promise Deliver Order Within 30 Min</p>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12 mb-3">
+            <h2 class="text-dark fst-italic">Today's Special</h2>
+            <div id="todayspecial" class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="shadow rounded card dishCard">
+                        <img class="card-img-top h-50" src="http://forkify-api.herokuapp.com/images/BBQChickenPizzawithCauliflowerCrust5004699695624ce.jpg" alt="dish" />
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">Pizza</h5>
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <a href="/Recipe/Order?id=5ed6604591c37cdc054bcc13" class="btn btn-sm textblack text-white shadow rounded p-2">Order</a>
+                                <span class="addToCartIcon" onclick="cart.call(this)" data-recipeId="5ed6604591c37cdc054bcc13">
+                                    <i class="fa-regular fa-heart fs-3"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="shadow rounded card dishCard p-2">
+                        <img class="card-img-top h-50   " src="http://forkify-api.herokuapp.com/images/gelatin_poke_cake2d07.jpg" alt="dish" />
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">Cake</h5>
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <a href="/Recipe/Order?id=5ed6604591c37cdc054bcf3d" class="btn btn-sm textblack text-white shadow rounded p-2">Order</a>
+                                <span class="addToCartIcon" onclick="cart.call(this)" data-recipeId="5ed6604591c37cdc054bcf3d">
+                                    <i class="fa-regular fa-heart fs-3"></i>
+                                </span>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="shadow rounded card dishCard">
+                        <img class="card-img-top h-50" src="http://forkify-api.herokuapp.com/images/344130b63.jpg" alt="dish" />
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">Strawberry</h5>
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <a href="/Recipe/Order?id=5ed6604591c37cdc054bca24" class="btn btn-sm textblack text-white shadow rounded p-2">Order</a>
+                                <span class="addToCartIcon" onclick="cart.call(this)" data-recipeId="5ed6604591c37cdc054bca24">
+                                    <i class="fa-regular fa-heart fs-3"></i>
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

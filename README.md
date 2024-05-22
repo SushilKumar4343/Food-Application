@@ -10,3 +10,6 @@ usinesses looking to enhance their online presence.
 Order Management: Efficient handling of customer orders
 User-Friendly Interface: Easy navigation and a clean, responsive design for a pleasant user experience.
 Admin Dashboard not completed
+
+forkify api for images and product data
+Using https://forkify-api.herokuapp.com/
